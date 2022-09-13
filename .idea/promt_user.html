@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        function PromtUser(){
+            var name, txt;
+            name = window.prompt("Enter name");
+            if (name != null || name != "")
+                txt = "Hello " + name;
+            document.getElementById('name').innerHTML= txt;
+        }
+    </script>
 </head>
 
 <body>
  <button type="button" onclick="PromtUser();">
-   Promtme
+   Promt me
  </button>
    <p id="name"></p>
-<script src = "promt_name.js"></script>
-
 </body>
 </html>

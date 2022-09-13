@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title Page</title>
-  <script>
-    function Promtuser(){
-      var txt, name;
-      name = window.prompt("Enter name");
-      if(name != null || name != "")
-        txt = "Hello " + name;
-      document.getElementById('name').innerHTML = txt;
-    }
-  </script>
+    <title>Title</title>
+    <script>
+        function PromtUser(){
+            var name, txt;
+            name = window.prompt("Enter name");
+            if (name != null || name != "")
+                txt = "Hi" + name;
+            document.getElementById('name').innerHTML= txt;
+        }
+    </script>
 </head>
+
 <body>
-<button type="button" onclick="Promtuser();">Enter name</button>
-<p id = "name"></p>
+<button type="button" onclick="PromtUser();">
+    Promt me
+</button>
+<p id="name"></p>
 </body>
 </html>
